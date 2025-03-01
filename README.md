@@ -26,24 +26,35 @@
 
 #### Ответ:
 Адрес
+
 ● address_id индентификатор (первичный ключ, integer)
 ● address адрес (varchar(100))
 ● branch_region идентификатор региона (внешний ключ, integer)
 ● branch_city идентификатор города (внешний ключ, integer)
+
 Регион
+
 ● region_id (первичный ключ, integer)
 ● name_region (varchar(100))
+
 Город
+
 ● city_id (первичный ключ, integer)
 ● name_city (varchar(100))
+
 Тип подразделения
+
 ● dep_type_id (первичный ключ, integer)
 ● name_dep название типа подразделения (varchar(50))
+
 Структурные подразделения
+
 ● department_id идентификатор подразделения (первичный ключ, integer)
 ● dep_to_type идентификатор типа (внешний ключ, integer)
 ● department_name название подразделения (varchar(100))
+
 Сотрудники
+
 ● employee_id идентификатор должности сотрудника (первичный ключ, integer)
 ● title_id идентификатор должности (внешний ключ, integer)
 ● last_name Фамилия сотрудника (varchar(50))
@@ -53,16 +64,22 @@
 ● hire_data Дата найма (date)
 ● structural_dep_id индентификатор стурктурного подразделения (внешний ключ, integer)
 ● address_id идентификатор адреса (внешний ключ, integer)
+
 Должность
+
 ● title_id: идентификатор должности (первичный ключ, integer)
 ● title должность (varchar(100))
+
 Проекты
+
 ● project_id идентификатор проекта (первичный ключ, integer)
 ● project_name название проекта (varchar(100))
 ● project_description описание проекта (text)
 ● start_date Дата начала проекта (date)
 ● end_date Дата окончания проекта (date)
+
 Назначения на проект
+
 ● employee_id идентификатор сотрудника (внешний ключ, integer)
 ● project_id идентификатор проекта (внешний ключ, integer)
 
